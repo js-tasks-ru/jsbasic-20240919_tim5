@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Эту функцию трогать не нужно
  */
 function print(text) {
@@ -10,7 +10,16 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  if (name === null || name === '') {
+    return false; // имя пустое
+  }
+  if (name.includes(' ')) {
+    return false; // имя содержит пробелы
+  }
+  if (name.length < 4) {
+    return false; // имя имеет меньше 4 символов
+  }
+  return true; // имя корректное
 }
 
 function sayHello() {
