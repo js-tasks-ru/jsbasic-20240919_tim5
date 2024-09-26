@@ -1,4 +1,4 @@
-﻿function truncate(str, maxlength) {
+function truncate(str, maxlength) {
   if (str.length <= maxlength) {
 return str;
 }

@@ -1,4 +1,4 @@
-﻿function ucFirst(str) {
+function ucFirst(str) {
   if (str === '') {
     return '';
   }
